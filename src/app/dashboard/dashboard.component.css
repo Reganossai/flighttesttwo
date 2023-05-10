@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+td,
+th {
+    width: 300px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table {
+    border-spacing: 0 15px;
+    margin: 0px 0px 0px 30px;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 15px;
+    color: #B6D0E2;
+
+}
+
+hr {
+    margin-top: 15px;
+    margin-left: 110px;
+    width: 1100px;
+
+}
+
+.logoo {
+    width: 100px;
+    height: 90px;
+    border-radius: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+.logout-btn {
+    background: lightblue;
+    padding: 10px 5px 10px 5px;
+    border-radius: 5px;
+    position: absolute;
+    left: 1200px;
+    top: 50px;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    hr {
+        margin: 15px 0px 0px 0px;
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    td {
+        width: 500px;
+
+    }
+
+    table {
+        margin: 0px 10px 30px 3px;
+    }
+
+
+    .logout-btn {
+        position: absolute;
+        left: 300px;
+        top: 35px;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+
+
+
+
+
+
+
+}

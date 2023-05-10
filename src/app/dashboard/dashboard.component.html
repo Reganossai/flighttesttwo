@@ -1,0 +1,49 @@
+<nav>
+  <img
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9XaEQNEV5FJTX63PPARNUSmkwcMCjemjhGg&usqp=CAU"
+  class="logoo" alt="logoo" />
+
+  <button (click)="logOut()" class="logout-btn">Logout</button>
+</nav>
+
+<hr/>
+
+<h1>Arrivals(Frankfurt International Airport (EDDF))</h1>
+<table>
+  <tr>
+    <th>ICAO addess of transponder</th>
+    <th>Estimated time of arrival(unix format)</th>
+    <th>Call Sign</th>
+    <th>ICAO code of the estimated daparture airport</th>
+  </tr>
+
+  <tbody>
+    <tr *ngFor="let flight of flights">
+      <td>{{ flight.icao24 }}</td>
+      <td>{{ flight.lastSeen }}</td>
+      <td>{{ flight.callsign }}</td>
+      <td>{{ flight.estDepartureAirport }}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<h1>Departures(Frankfurt International Airport (EDDF))</h1>
+<table>
+  <tr>
+    <th>ICAO addess of transponder</th>
+    <th>Estimated time of arrival(unix format)</th>
+    <th>Call Sign</th>
+    <th>ICAO code of the estimated arrival airport</th>
+  </tr>
+
+  <tbody>
+    <tr *ngFor="let flight of flights">
+      <td>{{ flight.icao24 }}</td>
+      <td>{{ flight.lastSeen }}</td>
+      <td>{{ flight.callsign }}</td>
+      <td>{{ flight.estArrivalAirport }}</td>
+    </tr>
+  </tbody>
+</table>
